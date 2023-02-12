@@ -1,18 +1,25 @@
-console.log('Hello World!');
+// console.log('Hello World!');
 
-const str: string = 'Hello';
-console.log(str);
+// const str: string = 'Hello';
+// console.log(str);
 
-let color: string = 'Red';
-console.log(color);
-console.log(typeof(color));
+// let color: string = 'Red';
+// console.log(color);
+// console.log(typeof(color));
 
-const pi = 3.14;
-console.log(pi);
+// const pi = 3.14;
+// console.log(pi);
 
-const firstName = 'Ryunosuke';
-const lastName = 'Saito';
+// const firstName = 'Ryunosuke';
+// const lastName = 'Saito';
 
 // テンプレートリテラル
-const message = `Hello! I am ${firstName} ${lastName}.`;
-console.log(message);
+// const message = `Hello! I am ${firstName} ${lastName}.`;
+// console.log(message);
+
+//関数
+function rectangle(height: number, width: number = 10):number {
+    return height * width;
+}
+
+console.log(rectangle(3, 5));
