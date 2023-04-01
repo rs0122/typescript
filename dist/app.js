@@ -31,20 +31,40 @@
 // const olivia = new User();
 // olivia.name = 'Olivia';//エラー
 // メソッドの利用
+// class User {
+// name: string = '';
+// age: number = 0;
+// 
+// isAdult(): boolean {
+// return this.age >= 18;
+// }
+// 
+// setAge(age: number) {
+// this.age = age;
+// }
+// }
+// 
+// const olivia = new User();
+// console.log(olivia.isAdult());
+// olivia.setAge(23);
+// console.log(olivia.isAdult());
+// 
+// const liam = new User();
+// liam.setAge(18);
+// console.log(liam.isAdult());
+// コンストラクタの利用
 class User {
     name = '';
     age = 0;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
     isAdult() {
         return this.age >= 18;
     }
-    setAge(age) {
-        this.age = age;
-    }
 }
-const olivia = new User();
+const olivia = new User('Olivia', 23);
+console.log(olivia.name);
+console.log(olivia.age);
 console.log(olivia.isAdult());
-olivia.setAge(23);
-console.log(olivia.isAdult());
-const liam = new User();
-liam.setAge(18);
-console.log(liam.isAdult());
