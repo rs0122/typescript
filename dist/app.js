@@ -64,16 +64,20 @@ class User {
         return this.age >= 18;
     }
 }
-const olivia = new User('Olivia', 23);
-const liam = new User('Liam', 25);
+// const olivia = new User('Olivia', 23);
+// const liam: User = new User('Liam', 25);
 // Userクラスの継承
 class AdminUser extends User {
     adminRole = 1;
     sayAdminRole() {
         console.log(`My adminRole is ${this.adminRole}`);
     }
+    // オーバーライド(overrideは記述任意)
+    isAdult() {
+        return true;
+    }
 }
 const emma = new AdminUser('Emma', 16);
-console.log(emma.name);
-console.log(emma.isAdult());
-emma.sayAdminRole();
+// console.log(emma.name);
+console.log(emma.isAdult()); //trueが返る
+// emma.sayAdminRole();

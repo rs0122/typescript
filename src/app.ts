@@ -73,8 +73,8 @@ class User {
 
 }
 
-const olivia = new User('Olivia', 23);
-const liam: User = new User('Liam', 25);
+// const olivia = new User('Olivia', 23);
+// const liam: User = new User('Liam', 25);
 
 // Userクラスの継承
 class AdminUser extends User {
@@ -83,9 +83,15 @@ class AdminUser extends User {
     public sayAdminRole() {
         console.log(`My adminRole is ${this.adminRole}`);
     }
+
+    // オーバーライド(overrideは記述任意)
+    public override isAdult(): boolean {
+        return true;
+    }
 }
 
 const emma = new AdminUser('Emma', 16);
-console.log(emma.name);
-console.log(emma.isAdult());
-emma.sayAdminRole();
+// console.log(emma.name);
+console.log(emma.isAdult()); //trueが返る
+// emma.sayAdminRole();
+
