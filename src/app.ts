@@ -68,57 +68,68 @@
 // console.log(arr5);
 
 // オブジェクト
-const user = {
-    name : 'Ryunosuke Saito',
-    gender : 'man',
-    age : 29
-};
+// const user = {
+    // name : 'Ryunosuke Saito',
+    // gender : 'man',
+    // age : 29
+// };
 
-console.log(user.name);
-console.log(user.gender);
-console.log(user.age);
+// console.log(user.name);
+// console.log(user.gender);
+// console.log(user.age);
 
-console.log(user['name']);
-console.log(user['gender']);
-console.log(user['age']);
+// console.log(user['name']);
+// console.log(user['gender']);
+// console.log(user['age']);
 
-user.age = 30;
-console.log(user.age);
+// user.age = 30;
+// console.log(user.age);
 
 // プロパティの個数を求める
-console.log(Object.keys(user).length);
-console.log(Object.keys(user));
+// console.log(Object.keys(user).length);
+// console.log(Object.keys(user));
 
 // 型定義
-const user2: {
-    name:string,
-    gender:string,
-    age:number
-} = {
-    name: 'Ryunosuke Saito',
-    gender: 'man',
-    age: 29
-};
+// const user2: {
+    // name:string,
+    // gender:string,
+    // age:number
+// } = {
+    // name: 'Ryunosuke Saito',
+    // gender: 'man',
+    // age: 29
+// };
 
 // インターフェイス
-interface UserObj {
-    name:string,
-    gender:string,
-    age?:number
-}
+// interface UserObj {
+    // name:string,
+    // gender:string,
+    // age?:number
+// }
 
-const user3: UserObj = {
-    name: 'Ryunosuke Saito',
-    gender: 'man',
-    age: 29
-}
+// const user3: UserObj = {
+    // name: 'Ryunosuke Saito',
+    // gender: 'man',
+    // age: 29
+// }
 
-console.log(user3.name);
-console.log(user3.gender);
-console.log(user3.age);
+// console.log(user3.name);
+// console.log(user3.gender);
+// console.log(user3.age);
 
 // タプル
-let user4: [string, number, string] = ['Liam', 20, 'Tokyo'];
-console.log(user4[2]);
-user4 = ['Olivia', 21, 'Osaka']; //型・個数が一致していれば書き換え可能
-console.log(user4[2]);
+// let user4: [string, number, string] = ['Liam', 20, 'Tokyo'];
+// console.log(user4[2]);
+// user4 = ['Olivia', 21, 'Osaka']; //型・個数が一致していれば書き換え可能
+// console.log(user4[2]);
+
+// for of分
+const colors = ['Red', 'Blue', 'Green'];
+for(const color of colors){
+    console.log(color);
+}
+
+const str = 'Typescript';
+for(const character of str){
+    console.log(character);
+}
