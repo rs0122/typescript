@@ -85,3 +85,8 @@ const user3 = {
 console.log(user3.name);
 console.log(user3.gender);
 console.log(user3.age);
+// タプル
+let user4 = ['Liam', 20, 'Tokyo'];
+console.log(user4[2]);
+user4 = ['Olivia', 21, 'Osaka']; //型・個数が一致していれば書き換え可能
+console.log(user4[2]);

@@ -1,0 +1,8 @@
+typescript
+
+app.tsの配置されているディレクトリで
+tsc -w
+でコンパイル自動化
+
+npm run start
+でlite-server立ち上げ・自動リロード
