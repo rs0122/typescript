@@ -30,3 +30,21 @@
 // 
 // const olivia = new User();
 // olivia.name = 'Olivia';//エラー
+// メソッドの利用
+class User {
+    name = '';
+    age = 0;
+    isAdult() {
+        return this.age >= 18;
+    }
+    setAge(age) {
+        this.age = age;
+    }
+}
+const olivia = new User();
+console.log(olivia.isAdult());
+olivia.setAge(23);
+console.log(olivia.isAdult());
+const liam = new User();
+liam.setAge(18);
+console.log(liam.isAdult());
