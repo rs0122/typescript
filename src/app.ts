@@ -59,25 +59,21 @@
 
 // コンストラクタの利用
 class User {
-    readonly name: string = '';
-    age: number = 0;
+    name: string = '';
+    private age: number = 0;
 
     constructor(name: string, age: number) {
         this.name = name;
         this.age = age;
     }
 
-    isAdult(): boolean {
+    public isAdult(): boolean {
         return this.age >= 18;
     }
 
-    // readonly型はconstructor以外の代入を許可しない
-    // setName(name: string) {
-        // this.name = name;
-    // }
 }
 
-const olivia = new User('Olivia', 23);
-console.log(olivia.name);
-console.log(olivia.age);
-console.log(olivia.isAdult());
+// const olivia = new User('Olivia', 23);
+// console.log(olivia.name);
+// アクセス不可
+// console.log(olivia.age);

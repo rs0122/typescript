@@ -64,7 +64,7 @@ class User {
         return this.age >= 18;
     }
 }
-const olivia = new User('Olivia', 23);
-console.log(olivia.name);
-console.log(olivia.age);
-console.log(olivia.isAdult());
+// const olivia = new User('Olivia', 23);
+// console.log(olivia.name);
+// アクセス不可
+// console.log(olivia.age);
