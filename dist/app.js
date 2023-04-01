@@ -69,6 +69,10 @@ class User {
 // Userクラスの継承
 class AdminUser extends User {
     adminRole = 1;
+    constructor(name, age, adminRole) {
+        super(name, age);
+        this.adminRole = adminRole;
+    }
     sayAdminRole() {
         console.log(`My adminRole is ${this.adminRole}`);
     }
@@ -77,7 +81,7 @@ class AdminUser extends User {
         return true;
     }
 }
-const emma = new AdminUser('Emma', 16);
-// console.log(emma.name);
-console.log(emma.isAdult()); //trueが返る
-// emma.sayAdminRole();
+const emma = new AdminUser('Emma', 16, 2);
+console.log(emma.name);
+//console.log(emma.isAdult()); //trueが返る
+emma.sayAdminRole();
