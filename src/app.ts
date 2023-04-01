@@ -1,2 +1,2 @@
-import {myName, age as myAge} from './test.js';
-console.log(myName,myAge);
+import { getTestName } from "./test.js";
+console.log(`Hello! I'm ${getTestName()}.`)
