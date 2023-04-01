@@ -64,7 +64,16 @@ class User {
         return this.age >= 18;
     }
 }
-// const olivia = new User('Olivia', 23);
-// console.log(olivia.name);
-// アクセス不可
-// console.log(olivia.age);
+const olivia = new User('Olivia', 23);
+const liam = new User('Liam', 25);
+// Userクラスの継承
+class AdminUser extends User {
+    adminRole = 1;
+    sayAdminRole() {
+        console.log(`My adminRole is ${this.adminRole}`);
+    }
+}
+const emma = new AdminUser('Emma', 16);
+console.log(emma.name);
+console.log(emma.isAdult());
+emma.sayAdminRole();
